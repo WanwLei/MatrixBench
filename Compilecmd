@@ -1,0 +1,3 @@
+acpp -O2 --acpp-targets=hip:gfx926 FP64test.cpp -I/opt/dtk/rocblas/include -L/opt/dtk/rocblas/lib -lrocblas
+
+/opt/tools/sycl_dcu_release/sycl_frontend/build/bin/clang++ -O2 -fsycl -fsycl-targets=amdgcn-amd-amdhsa -Xsycl-target-backend --offload-arch=gfx926 FP64test.cpp
